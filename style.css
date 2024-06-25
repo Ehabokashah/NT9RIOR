@@ -1,0 +1,281 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  width: 100%;
+  height: 100dvh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.739), rgba(0, 0, 0, 0.739)),
+    url(banner.png);
+  background-size: cover;
+  background-position: center;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+ul {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 120px;
+  font-size: 26px;
+  position: fixed;
+  top: 77px;
+  text-align: center;
+  width: 100%;
+  height: 100dvh;
+  left: -100%;
+  padding-top: 30px;
+  backdrop-filter: blur(10px);
+  transition: 0.4s;
+  z-index: 1;
+}
+ul li a {
+  text-decoration: none;
+  color: white;
+  transition: color 0.25s ease-in-out;
+}
+ul li a:hover {
+  color: rgb(78, 184, 219);
+}
+.mycheckbtn {
+  display: none;
+}
+.logo {
+  font-size: 25px;
+  text-decoration: none;
+  color: white;
+  font-weight: bolder;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+}
+.mycheckbtn:checked ~ ul {
+  left: 0;
+}
+.herocont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 35%;
+  padding: 10px;
+}
+.herocont h1 {
+  color: white;
+  font-size: 35px;
+  font-weight: 100;
+}
+.herocont p {
+  text-align: center;
+  color: white;
+  margin-top: 10px;
+  font-size: large;
+}
+.btncont {
+  display: flex;
+  flex-direction: column;
+}
+button {
+  margin-top: 30px;
+  padding: 15px 25px;
+  background-color: transparent;
+  border: 2px solid rgb(78, 184, 219);
+  color: white;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 30px;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition: border 0.3s ease-in-out;
+}
+.span {
+  background-color: rgb(78, 184, 219);
+  height: 100%;
+  width: 100%;
+  border-radius: 25px;
+  position: absolute;
+  left: -100%;
+  bottom: 0;
+  transition: 0.9s;
+  z-index: -1;
+}
+button:hover .span {
+  left: 0;
+}
+button:hover {
+  border: 2px solid transparent;
+}
+.firstsection {
+  background-color: white;
+  width: 100%;
+  height: 100dvh;
+  margin-top: 141px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 30px;
+  justify-content: space-evenly;
+}
+.firstsection img {
+  width: 330px;
+  height: 330px;
+  border-radius: 50px;
+}
+.FirstLorem {
+  text-align: center;
+  font-size: 18px;
+}
+.btn2 {
+  color: rgb(78, 184, 219);
+  transition: color, background-color 0.3s ease-in-out;
+  display: flex;
+  min-width: 200px;
+  justify-content: space-around;
+  align-items: center;
+}
+.arrow {
+  fill: rgb(78, 184, 219);
+  transition: fill 0.3s ease-in-out;
+}
+.btn2:hover .arrow {
+  fill: white;
+}
+.btn2:hover {
+  background-color: rgb(78, 184, 219);
+  color: white;
+}
+body:has(.mycheckbtn:checked) {
+  overflow: hidden;
+}
+.secSection {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.739), rgba(0, 0, 0, 0.739)),
+    url(italian-luxury-designer-bedroom-furniture-1500x800.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding: 80px;
+  gap: 10px;
+}
+.secSection h1 {
+  color: white;
+  font-weight: 100;
+  margin: 60px 0;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 30px;
+  align-items: center;
+  outline: 1px solid #ffffff80;
+  color: white;
+  max-width: 410px;
+  background-color: rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(6px);
+}
+
+.secLorem {
+  text-align: center;
+  font-size: large;
+  max-width: 400px;
+}
+.card img {
+  width: 330px;
+  height: 330px;
+  border-radius: 12px;
+  margin-top: 10px;
+}
+.btn3 {
+  color: rgb(78, 184, 219);
+  transition: color, background-color 0.3s ease-in-out;
+  display: flex;
+  min-width: 200px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.btn3:hover .arrow {
+  fill: white;
+}
+.btn3:hover {
+  background-color: rgb(78, 184, 219);
+  color: white;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(10, 10, 31);
+  width: 100%;
+  padding: 30px;
+  justify-content: space-around;
+  height: 100dvh;
+}
+.quote {
+  color: white;
+  font-weight: 100;
+  margin-top: 30px;
+  font-size: 25px;
+}
+.Form {
+  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.input {
+  width: 340px;
+  border-radius: 15px;
+  padding: 10px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.486);
+  font-size: 15px;
+  transition: border 0.2s ease-in-out;
+}
+
+.input:hover {
+  border: 1px solid rgb(78, 184, 219);
+}
+.btn4 {
+  color: rgb(78, 184, 219);
+  transition: color, background-color 0.3s ease-in-out;
+  display: flex;
+  min-width: 200px;
+  justify-content: space-around;
+  align-items: center;
+  padding: 15px;
+}
+.send {
+  fill: rgb(78, 184, 219);
+  transition: fill 0.3s ease-in-out;
+}
+.btn4:hover .send {
+  fill: white;
+}
+.btn4:hover {
+  background-color: rgb(78, 184, 219);
+  color: rgb(255, 255, 255);
+}
+.footer {
+  background-color: rgb(78, 184, 219);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 10px;
+}
+.footerlorem {
+  width: 200px;
+}
